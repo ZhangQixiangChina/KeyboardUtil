@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line"
+        android:background="#9c9c9c"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <TextView
+        android:lineSpacingExtra="5dp"
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#333333"
+        android:layout_below="@id/line"
+        android:layout_above="@+id/et"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33000000" />
+
+</RelativeLayout>
