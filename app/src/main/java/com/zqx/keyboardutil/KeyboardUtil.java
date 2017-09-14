@@ -42,7 +42,7 @@ public class KeyboardUtil {
         private View             mContentView;
         private int              mOriginHeight;
         private int              mPreHeight;
-        private KeyBoardListener mKeyBoardListen;
+        private KeyBoardListener mKeyBoardListener;
 
         KeyboardHandler(Activity activity) {
             if (activity == null) return;
@@ -53,7 +53,7 @@ public class KeyboardUtil {
         }
 
         void setKeyBoardListener(KeyBoardListener keyBoardListen) {
-            this.mKeyBoardListen = keyBoardListen;
+            this.mKeyBoardListener = keyBoardListen;
         }
 
         @Override
@@ -87,8 +87,8 @@ public class KeyboardUtil {
                     isShow = true;
                 }
 
-                if (mKeyBoardListen != null) {
-                    mKeyBoardListen.onKeyboardChange(isShow, keyboardHeight);
+                if (mKeyBoardListener != null) {
+                    mKeyBoardListener.onKeyboardChange(isShow, keyboardHeight);
                 }
             }
         }
